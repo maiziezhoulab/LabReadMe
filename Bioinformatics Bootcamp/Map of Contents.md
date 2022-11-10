@@ -12,15 +12,15 @@ group private slides, don's share with others!
 
 ### basic file formats
 
-Bam
+- Bam
 https://samtools.github.io/hts-specs/SAMv1.pdf
-Fastq
+- Fastq
 https://en.wikipedia.org/wiki/FASTQ_format
-Fasta
+- Fasta
 https://en.wikipedia.org/wiki/FASTA_format
 
 ### basic softwares
-Samtools
+- Samtools
 http://www.htslib.org/doc/
-Pysam
+- Pysam
 https://pysam.readthedocs.io/en/latest/api.html
