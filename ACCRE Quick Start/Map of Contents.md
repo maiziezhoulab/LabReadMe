@@ -7,4 +7,4 @@ Accre documentation  https://www.vanderbilt.edu/accre/documentation/
 
 Accre cheatsheet https://www.vanderbilt.edu/accre/documentation/cheatsheet/
 
-[Slurm templates](Slurm_job.md)
+[Slurm templates](Slurm_Job.md)
