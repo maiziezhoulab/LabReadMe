@@ -1,4 +1,4 @@
-# ACCRE slurm file template:
+# ACCRE slurm file header template:
 ## Regular job
 ```
 #!/bin/bash
