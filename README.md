@@ -1,6 +1,7 @@
 # Introduction
 
 \* We share useful information here, so all current or incoming students can benefit from it.
+For all current PhD students, please feel free to create new folder, new md file, or write to the existing md files.
 
 # Table of Contents
 - [ACCRE Quick Start and Useful Information](ACCRE%20Quick%20Start/)
