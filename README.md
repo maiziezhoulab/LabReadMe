@@ -1,6 +1,6 @@
 # Introduction
 
-\*Introduce the main goal/reason of creating this repo
+\* We share useful information here, so all current or incoming students can benefit from it.
 
 # Table of Contents
 - [ACCRE Quick Start and Useful Information](ACCRE%20Quick%20Start/)
