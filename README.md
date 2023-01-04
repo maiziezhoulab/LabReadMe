@@ -1,6 +1,6 @@
 # Introduction
 
-\* We share useful information here, so all current or incoming students can benefit from it.
+\* We share useful information here, so all current or incoming students can benefit from it. <br />
 For all current PhD students, please feel free to create new folder, new md file, or write to the existing md files.
 
 # Table of Contents
