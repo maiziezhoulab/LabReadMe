@@ -8,6 +8,6 @@
 - [CClabGPU](CClabGPU/README.md)
 - [Lab Projects](Lab%20Projects/Map%20of%20Contents.md)
 - [Lab Resources](Lab%20Resources/Map%20of%20Contents.md)
-- [Vandy PhD Useful Info](Vandy%PhD%Useful%Info/README.md)
+- [Vandy PhD Useful Info](Vandy%20PhD%20Useful%20Info/README.md)
 - [Conference and Journals](Conference%20and%20Journals/Map%20of%20Contents.md)
 - ...
