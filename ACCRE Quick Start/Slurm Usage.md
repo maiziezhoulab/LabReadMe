@@ -1,6 +1,6 @@
 # Slurm Usage
 ## Table of Contents
-- [Submitting Jobs](#Submitting Jobs)
+- [Submitting Jobs](#Submitting-Jobs)
   - [A Quick Example](#A-Quick-Example)
   - [Slurm Header](#Slurm-Header)
 - [Track Your Jobs](#Track-Your-Jobs)
