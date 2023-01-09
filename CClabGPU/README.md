@@ -1,1 +1,4 @@
-Yunfei: please add cclab gpu info here, so students like mingxing can also use it later. 
+#CClab GPU server introdution
+
+
+## Physical location: Stevenson complex unit 5 8th flood
