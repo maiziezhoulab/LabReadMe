@@ -1,6 +1,6 @@
 # Slurm Usage
 ## Table of Contents
-1. [Submitting a Job](#Submitting%20a%20Job)
+1. [Submitting a Job](#Submitting-a-Job)
 ## Regular job
 ```
 #!/bin/bash
