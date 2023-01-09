@@ -4,8 +4,8 @@
 For all current PhD students, please feel free to create new folder, new md file, or write to the existing md files.
 
 # Table of Contents
-- [ACCRE Quick Start and Useful Information](ACCRE%20Quick%20Start/)
-- [Bioinformatics Bootcamp](Bioinformatics%20Bootcamp/)
+- [ACCRE Quick Start and Useful Information](ACCRE%20Quick%20Start/Map%20of%20Contents.md)
+- [Bioinformatics Bootcamp](Bioinformatics%20Bootcamp/Map%20of%20Contents.md)
 - [CClabGPU](CClabGPU/)
 - [Lab Projects](Lab%20Projects/)
 - [Lab Resources](Lab%20Resources/)
