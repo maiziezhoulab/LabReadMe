@@ -16,16 +16,11 @@ NVIDIA-SMI 470.57.02    Driver Version: 470.57.02    CUDA Version: 11.4
 | GPU  Name        Persistence-M Fan  Temp  Perf  Pwr:Usage/Cap | Bus-Id        Disp.A Memory-Usage | Volatile Uncorr. ECC GPU-Util  Compute M. MIG M. |
 |    :----:   |    :----:   |    :----:   |
 |   0  Quadro RTX 8000     On 33%   37C    P8    20W / 260W  | 00000000:19:00.0 Off 5MiB / 48601MiB |                  Off 0%      Default N/A |
-|   1  Quadro RTX 8000     On   | 00000000:1A:00.0 Off |                  Off |
-| 34%   42C    P8    21W / 260W |      5MiB / 48601MiB |      0%      Default |
-|                               |                      |                  N/A |
-|   2  Quadro RTX 8000     On   | 00000000:67:00.0 Off |                  Off |
-| 34%   42C    P8    31W / 260W |      5MiB / 48601MiB |      0%      Default |
-|                               |                      |                  N/A |
+|   1  Quadro RTX 8000     On 34%   42C    P8    21W / 260W  | 00000000:1A:00.0 Off 5MiB / 48601MiB |                  Off 0%      Default N/A |
+|   2  Quadro RTX 8000     On 34%   42C    P8    31W / 260W  | 00000000:67:00.0 Off 5MiB / 48601MiB |                  Off 0%      Default N/A |
 |                                                                             |
-|   3  Quadro RTX 8000     On   | 00000000:68:00.0 Off |                  Off |
-| 34%   43C    P8    22W / 260W |     98MiB / 48593MiB |      0%      Default |
-|                               |                      |                  N/A |
+|   3  Quadro RTX 8000     On 34%   43C    P8    22W / 260W  | 00000000:68:00.0 Off 98MiB / 48593MiB |                 Off 0%      Default N/A |
+
 
 so basically, we have 4 gpu nodes and each of those has 48g working memory. Super good for large batch training.
 
