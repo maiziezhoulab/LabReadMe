@@ -1,4 +1,6 @@
-# ACCRE slurm file header template:
+# Slurm Usage
+## Table of Contents
+1. [Submitting a Job](#Submitting%20a%20Job)
 ## Regular job
 ```
 #!/bin/bash
