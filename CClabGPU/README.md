@@ -29,7 +29,7 @@ extra notice: you need to use the Vandy VPN if you are not remote from campus, r
 |   2  Quadro RTX 8000     On   | 00000000:67:00.0 Off |                  Off |
 | 34%   42C    P8    31W / 260W |      5MiB / 48601MiB |      0%      Default |
 |                               |                      |                  N/A |
-|-----------------------------------------------------------------------------|
+|                                                                             |
 |   3  Quadro RTX 8000     On   | 00000000:68:00.0 Off |                  Off |
 | 34%   43C    P8    22W / 260W |     98MiB / 48593MiB |      0%      Default |
 |                               |                      |                  N/A |
