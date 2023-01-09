@@ -14,6 +14,7 @@ extra notice: you need to use the Vandy VPN if you are not remote from campus, r
 NVIDIA-SMI 470.57.02    Driver Version: 470.57.02    CUDA Version: 11.4    
 
 | GPU  Name        Persistence-M Fan  Temp  Perf  Pwr:Usage/Cap | Bus-Id        Disp.A Memory-Usage | Volatile Uncorr. ECC GPU-Util  Compute M. MIG M. |
+|    :----:   |    :----:   |    :----:   |
 |   0  Quadro RTX 8000     On   | 00000000:19:00.0 Off |                  Off |
 | 33%   37C    P8    20W / 260W |      5MiB / 48601MiB |      0%      Default |
 |                               |                      |                  N/A |
