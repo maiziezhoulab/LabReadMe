@@ -1,7 +1,23 @@
 # Slurm Usage
 ## Table of Contents
-1. [Submitting a Job](#Submitting-a-Job)
-## Regular job
+- [Submitting Jobs](#Submitting Jobs)
+  - [A Quick Example](#A-Quick-Example)
+  - [Slurm Header](#Slurm-Header)
+- [Track Your Jobs](#Track-Your-Jobs)
+- [Slurm Templates](#Slurm-Templates)
+  - [Regular Job](#Regular-Job)
+  - [GPU Job](#GPU-Job)
+
+## Submitting Jobs
+
+### A Quick Example
+
+### Slurm Header
+
+## Track Your Jobs
+
+## Slurm Templates
+### Regular job
 ```
 #!/bin/bash
 #
@@ -41,7 +57,7 @@
 
 ```
 
-## GPU job
+### GPU job
 ```
 #!/bin/bash
 #
@@ -80,4 +96,3 @@
 #SBATCH --mail-user=YOUR_EMAIL_ADDRESS
 #SBATCH --mail-type=END,FAIL
 ```
-## Submitting a Job
