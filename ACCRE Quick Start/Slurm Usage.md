@@ -40,13 +40,40 @@ Suppose you have a file `submit.slurm` in your current directory, and the conten
 #SBATCH --mail-user=YOUREMAIL@vanderbilt.edu
 #SBATCH --mail-type=END,FAIL
 
-ls -lht
+echo HelloWorld
 ```
-By running `sbatch submit.slurm` command, you will submit a job that asks one of the node in the `production` partition to run `ls -lht` command.
+By running `sbatch submit.slurm` command, you will submit a job that asks one of the node in the `production` partition to run `echo HelloWorld` command.
 
-As you may have noticed, the content in `submit.slurm` was consisted of two types of lines: some with `#SBATCH` at the beginning and some without. The first type was also known as the **header** of a slurm file, which passes essential information about the job to the Slurm workload manager.
+As you may have noticed, the content in `submit.slurm` was consisted of two types of lines: some with `#SBATCH` at the beginning and some without. Those with `#SBATCH` were also known as the **header** of a slurm file, which pass essential information about the job to the Slurm workload manager. We will break that down in the following section
+
+```
+#!/bin/bash
+```
+This line is not a slurm header, it just indicates that this file should be interpreted as a bash script
 
 ### Slurm Header
+#### Give Your Job a Name
+```
+#SBATCH --job-name=List_files_in_current_dir
+```
+By using this `--job-name` option, you can assign a name to your job
+#### Account and Partition
+```
+#SBATCH --account=maiziezhou_lab
+#SBATCH --partition=production
+```
+In these two lines, you need to specify which accout you are using and to which partition you want to to submit the job. Different partitions may belong to different owners/labs/groups, have different properties (cpu nodes, gpu nodes etc.) or used for different purpose (production, debug etc.), but in general, a partition just refers to a **subset of nodes in the cluster**. Different accounts can access different partitions, to check which accounts are available to you and which partitions they have access to, just type `slurm_groups` in the command line.
+#### Requiring Computing Resources
+```
+#SBATCH --ntasks=1
+#SBATCH --nodes=1
+#SBATCH --cpus-per-task=2
+#SBATCH --mem=5G
+#SBATCH --time=00-01:00:00
+```
+
+
+%% ReqNodeNotAvail, May be reserved for other job
 
 ## Track Your Jobs
 
