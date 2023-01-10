@@ -44,7 +44,7 @@ ls -lht
 ```
 By running `sbatch submit.slurm` command, you will submit a job that asks one of the node in the `production` partition to run `ls -lht` command.
 
-As you may have noticed, the content in `submit.slurm` was consisted of two parts: one with `#` at the beginning of each line and one without. The first part was also known as the **header** of a slurm file, which passes essential information about the job to the cluster so that the Slurm workload manager could schedule your j
+As you may have noticed, the content in `submit.slurm` was consisted of two types of lines: some with `#SBATCH` at the beginning and some without. The first type was also known as the **header** of a slurm file, which passes essential information about the job to the Slurm workload manager.
 
 ### Slurm Header
 
