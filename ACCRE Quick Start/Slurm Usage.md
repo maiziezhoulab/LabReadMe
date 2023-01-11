@@ -3,6 +3,7 @@
 - [Submitting Jobs](#Submitting-Jobs)
   - [A Quick Example](#A-Quick-Example)
   - [Slurm Header](#Slurm-Header)
+  - [Advanced Settings](#Advanced-Settings)
 - [Track Your Jobs](#Track-Your-Jobs)
 - [Slurm Templates](#Slurm-Templates)
   - [Regular Job](#Regular-Job)
@@ -71,9 +72,10 @@ In these two lines, you need to specify which accout you are using and to which 
 #SBATCH --mem=5G
 #SBATCH --time=00-01:00:00
 ```
-
+The block above is about the computing resources you want to allocate to a job. In many situations, you can just use `1` for `--ntasks` and `--nodes`, we will not go that detail into these two parameters, but if you are interested, you can refer to [Slurm Official Documentation](https://slurm.schedmd.com/sbatch.html) or [this post](https://stackoverflow.com/questions/39186698/what-does-the-ntasks-or-n-tasks-does-in-slurm)
 
 %% ReqNodeNotAvail, May be reserved for other job
+### Advanced Settings
 
 ## Track Your Jobs
 
