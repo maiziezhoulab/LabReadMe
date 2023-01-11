@@ -207,6 +207,6 @@ sacct --format=jobid,jobname,account,ntasks,elapsed,user,state -S 082222 -E 0825
 ## Other Resources
 - [Slurm Official Documentation](https://slurm.schedmd.com/sbatch.html)
 - [Introducing Slurm by Princeton](https://researchcomputing.princeton.edu/support/knowledge-base/slurm)
-- [CN materials: Slurm作业调度系统使用指南](http://hmli.ustc.edu.cn/doc/userguide/slurm-userguide.pdf)
+- [CN materials: Slurm作业调度系统使用指南 by 李会民](http://hmli.ustc.edu.cn/doc/userguide/slurm-userguide.pdf)
 ## FAQ
 %% ReqNodeNotAvail, May be reserved for other job
