@@ -72,7 +72,15 @@ In these two lines, you need to specify which accout you are using and to which 
 #SBATCH --mem=5G
 #SBATCH --time=00-01:00:00
 ```
-The block above is about the computing resources you want to allocate to a job. In many situations, you can just use `1` for `--ntasks` and `--nodes`, we will not go that detail into these two parameters, but if you are interested, you can refer to [Slurm Official Documentation](https://slurm.schedmd.com/sbatch.html) or [this post](https://stackoverflow.com/questions/39186698/what-does-the-ntasks-or-n-tasks-does-in-slurm)
+The block above is about the computing resources you want to allocate to your job. 
+
+In many situations, you can use `1` for `--ntasks` and `--nodes`, we will not go that detail into these two parameters, but if you are interested, you can refer to [Slurm Official Documentation](https://slurm.schedmd.com/sbatch.html) or [this post](https://stackoverflow.com/questions/39186698/what-does-the-ntasks-or-n-tasks-does-in-slurm).
+
+`--cpus-per-task` is the number of CPUs allocated to each task, and since we use `--ntasks=1` here, it is the same as the total number of CPUs allocated to this job. `--mem` is the amount of memory allocated to the job, and `--time` specifies the maximum time that the job can run (format is dd-hh:mm:ss).
+
+**Note that there are limits for the resources that could be allocated to a job on ACCRE**, you can check the time limits for different partitions with command `sinfo`, or use `scontrol show node -a [NODE_NAME]` to check the CPU and memory resources on a specific node. Typically, for nodes in `production` partition, the maximum time limits is 14 days, maximum memory is around 1~1.2T and maximum CPU number is around 128; for nodes in GPU partitions like `turing` and `pascal`, the time limit is around 5 days, memory limit is around 80G and CPU limit is around 6. However, these limits may change as ACCRE continues to upgrade, check them with the commands memtioned above to get the most up-to-date values. Nodes under `cgw-maizie` partition are the private nodes of our lab, there's no time limit for these nodes.
+
+Requiring too much resources for your job may result in waiting in the queue list for a long time, therefore, only request the resources that are just enough to complete the job. 
 
 %% ReqNodeNotAvail, May be reserved for other job
 ### Advanced Settings
