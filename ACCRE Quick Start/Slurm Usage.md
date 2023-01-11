@@ -9,6 +9,7 @@
   - [Regular Job](#Regular-Job)
   - [GPU Job](#GPU-Job)
 - [Other Resources](#Other-Resources)
+- [FAQ](#FAQ)
 
 ## Submitting Jobs
 
@@ -92,7 +93,7 @@ In many situations, you can use `1` for `--ntasks` and `--nodes`, we will not go
 
 `--cpus-per-task` is the number of CPUs allocated to each task, and since we use `--ntasks=1` here, it is the same as the total number of CPUs allocated to this job. `--mem` is the amount of memory allocated to the job, and `--time` specifies the maximum time that the job can run (format is dd-hh:mm:ss).
 
-**Note that there are limits for the resources that could be allocated to a job on ACCRE**, you can check the time limits for different partitions with command `sinfo`, or use `scontrol show node -a [NODE_NAME]` to check the CPU and memory resources on a specific node. Typically, for nodes in `production` partition, the maximum time limits is 14 days, maximum memory is around 1~1.2T and maximum CPU number is around 128; for nodes in GPU partitions like `turing` and `pascal`, the time limit is around 5 days, memory limit is around 80G and CPU limit is around 6. However, these limits may change as ACCRE continues to upgrade, check them with the commands memtioned above to get the most up-to-date values. Nodes under `cgw-maizie` partition are the private nodes of our lab, there's no time limit for these nodes.
+**Note that there are limits for the resources that could be allocated to a job on ACCRE**, you can check the time limits for different partitions with command `sinfo` or `sacctmgr show qos`, or use `scontrol show node -a [NODE_NAME]` to check the CPU and memory resources on a specific node. Typically, for nodes in `production` partition, the maximum time limits is 14 days, maximum memory is around 1~1.2T and maximum CPU number is around 128; for nodes in GPU partitions like `turing` and `pascal`, the time limit is around 5 days, memory limit is around 80G and CPU limit is around 6. However, these limits may change as ACCRE continues to upgrade, check them with the commands memtioned above to get the most up-to-date values. Nodes under `cgw-maizie` partition are the private nodes of our lab, there's no time limit for these nodes.
 
 Requiring too much resources for your job may result in waiting in the queue list for a long time, therefore, only request the resources that are just enough to complete the job.
 
@@ -116,11 +117,22 @@ These two lines specify where slurm will redirect the [stdout](https://www.compu
 ```
 In these two lines, you can tell the slurm how to notifiy you. `--mail-user` is the email that slurm will send notification to, and `--mail-type` is about when will slurm send email. In this example, slurm will send an email to `YOUREMAIL@vanderbilt.edu` when the job **ended** or **failed**. For more options, please refer to [Slurm Official Documentation](https://slurm.schedmd.com/sbatch.html).  
 
-%% ReqNodeNotAvail, May be reserved for other job
 ### Advanced Settings
+#### Request GPU Resource
+```
+#SBATCH --gres=gpu:1
+```
+Add this line to request GPU resources. Note that you have submit to partitions that do have GPU resources. Currently, the GPU limit is `1`
+
+#### Submit to Specific node(s)
+```
+#SBATCH --nodelist=[NODENAME]
+```
 
 ## Track Your Jobs
+sacct --format="JobID,user,account,elapsed, Timelimit,MaxRSS,ReqMem,MaxVMSize,ncpus,ExitCode" -j 42363199
 
+sacct --format=jobid,jobname,account,ntasks,elapsed,user,state -S 082222 -E 082522  -a | grep "maizie" | grep "FAILED" | grep -v ".ex+\|.ba+"
 ## Slurm Templates
 ### Regular job
 ```
@@ -187,3 +199,8 @@ In these two lines, you can tell the slurm how to notifiy you. `--mail-user` is 
 #SBATCH --mail-user=[YOUR_EMAIL_ADDRESS]
 #SBATCH --mail-type=END,FAIL
 ```
+
+## Other Resources
+
+## FAQ
+%% ReqNodeNotAvail, May be reserved for other job
