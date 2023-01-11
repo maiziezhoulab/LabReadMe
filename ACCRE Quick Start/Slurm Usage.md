@@ -88,7 +88,19 @@ Requiring too much resources for your job may result in waiting in the queue lis
 ```
 This is about which enviroment variables you want to use for this job, if it is not given, then the default action is `ALL`, which uses all your environment variables in this job. (this line is not needed actually, it's just the default setting)
 
-#### 
+#### Output and Error Information
+```
+#SBATCH --output=test.out
+#SBATCH --error=test.err
+```
+These two lines specify where slurm will redirect the [stdout](https://www.computerhope.com/jargon/s/stdout.htm) and [stderr](https://www.computerhope.com/jargon/s/stderr.htm) information to. In this example, stdout is redirected to file `test.out` and stderr to `test.err`. As this tasks runs `echo HelloWorld` command, you can find `HellowWorld` in `test.out`. In general, these two files are where you can find the printed output and error information of this job.
+
+#### Email Notification
+```
+#SBATCH --mail-user=YOUREMAIL@vanderbilt.edu
+#SBATCH --mail-type=END,FAIL
+```
+In these two lines, you can tell the slurm how to notifiy you. `--mail-user` is the email that slurm will send notification to, and `--mail-type` is about when will slurm send email. In this example, slurm will send an email to `YOUREMAIL@vanderbilt.edu` when the job **ended** or **failed**. For more options, please refer to [Slurm Official Documentation](https://slurm.schedmd.com/sbatch.html).  
 
 %% ReqNodeNotAvail, May be reserved for other job
 ### Advanced Settings
