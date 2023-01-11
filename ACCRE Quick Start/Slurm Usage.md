@@ -80,7 +80,15 @@ In many situations, you can use `1` for `--ntasks` and `--nodes`, we will not go
 
 **Note that there are limits for the resources that could be allocated to a job on ACCRE**, you can check the time limits for different partitions with command `sinfo`, or use `scontrol show node -a [NODE_NAME]` to check the CPU and memory resources on a specific node. Typically, for nodes in `production` partition, the maximum time limits is 14 days, maximum memory is around 1~1.2T and maximum CPU number is around 128; for nodes in GPU partitions like `turing` and `pascal`, the time limit is around 5 days, memory limit is around 80G and CPU limit is around 6. However, these limits may change as ACCRE continues to upgrade, check them with the commands memtioned above to get the most up-to-date values. Nodes under `cgw-maizie` partition are the private nodes of our lab, there's no time limit for these nodes.
 
-Requiring too much resources for your job may result in waiting in the queue list for a long time, therefore, only request the resources that are just enough to complete the job. 
+Requiring too much resources for your job may result in waiting in the queue list for a long time, therefore, only request the resources that are just enough to complete the job.
+
+#### Environment Variables
+```
+#SBATCH --export=ALL
+```
+This is about which enviroment variables you want to use for this job, if it is not given, then the default action is `ALL`, which uses all your environment variables in this job. (this line is not needed actually, it's just the default setting)
+
+#### 
 
 %% ReqNodeNotAvail, May be reserved for other job
 ### Advanced Settings
