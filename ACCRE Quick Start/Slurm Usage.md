@@ -159,9 +159,6 @@ sacct --format=jobid,jobname,account,ntasks,elapsed,user,state -S 082222 -E 0825
 ###Advanced
 ##submit to a specific node/some specific nodes, add this command: #SBATCH --nodelist=[NODENAME]
 #
-##### Environment Related ####
-#SBATCH --export=ALL
-#
 ##### Output and Error Information ####
 #SBATCH --output=[OUTFILE_NAME].out
 #SBATCH --error=[ERRFILE_NAME].err
@@ -191,9 +188,6 @@ sacct --format=jobid,jobname,account,ntasks,elapsed,user,state -S 082222 -E 0825
 #
 ###GPU related
 #SBATCH --gres=gpu:1
-#
-##### Environment Related ####
-#SBATCH --export=ALL
 #
 ##### Output and Error Information ####
 #SBATCH --output=[OUTFILE_NAME].out
