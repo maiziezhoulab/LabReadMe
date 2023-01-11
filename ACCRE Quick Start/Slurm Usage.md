@@ -130,6 +130,10 @@ Add this line to request GPU resources. Note that you have submit to partitions 
 ```
 
 ## Track Your Jobs
+squeue -a -u
+
+rtracejob
+
 sacct --format="JobID,user,account,elapsed, Timelimit,MaxRSS,ReqMem,MaxVMSize,ncpus,ExitCode" -j 42363199
 
 sacct --format=jobid,jobname,account,ntasks,elapsed,user,state -S 082222 -E 082522  -a | grep "maizie" | grep "FAILED" | grep -v ".ex+\|.ba+"
