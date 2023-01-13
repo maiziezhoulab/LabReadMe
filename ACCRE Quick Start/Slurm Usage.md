@@ -72,7 +72,7 @@ List of available accounts and partitions
 |    :----:   |    :----:   |    :----:   |
 | maiziezhou_lab | production | |
 | maiziezhou_lab | debug | |
-| cgw_maizie | cgw-maizie | No time limit |
+| cgw_maizie | cgw-maizie | No time limit. maizie node is our private node and is hidden by default, you need to add `-a` after `squeue` and `scontrol show node` in order too see it |
 | p_dsi | production |  |
 | p_dsi | debug |  |
 | maiziezhou_lab_acc | turing | GPU partition, recommended for GPU tasks |
