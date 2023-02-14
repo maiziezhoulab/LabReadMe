@@ -128,6 +128,20 @@ Add this line to request GPU resources. Note that you have submit to partitions 
 ```
 #SBATCH --nodelist=[NODENAME]
 ```
+examples:
+```
+#SBATCH --nodelist=node[01-09]
+#SBATCH --nodelist=node01,node02,node03,node04,node05,node07,node08,node09,node10
+```
+#### Exclude some nodes
+```
+#SBATCH --exclude=[NODENAME]
+```
+examples:
+```
+#SBATCH --exclude=node[01-09]
+#SBATCH --exclude=node01,node02,node03,node04,node05,node07,node08,node09,node10
+```
 
 ## Track Your Jobs
 squeue -a -u
