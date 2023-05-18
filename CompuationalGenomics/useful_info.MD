@@ -5,6 +5,9 @@ https://www.nist.gov/programs-projects/genome-bottle
 https://www.internationalgenome.org/data
 
 
+https://github.com/genome-in-a-bottle/genome-stratifications/releases
+
+
 SNP performance of NanoCaller and other variant callers in difficult-to-map regions on Nanopore reads of the Ashkenazim trio
 BED file sources of different difficult-to-map regions with respect to GRCh38 reference genome:
 1.	All difficult regions.
