@@ -33,5 +33,4 @@ Easy genomic regions are also used during performance comparison and are defined
 Definition of homopolymer and non-homopolymer regions for indel performance evaluation
 GIAB genome stratification BED is used to obtain homopolymer regions and non-homopolymer regions for evaluating indel performance. Homopolymer regions are obtained by combining GRCh38_AllHomopolymers_gt6bp_imperfectgt10bp_slop5.bed and GRCh38_SimpleRepeat_homopolymer_4to6_slop5.bed BED files. These first BED file contains intervals with perfect homopolymer regions longer than 6bp and imperfect homopolymers longer than 10bp (defined by GIAB as a ‘single base was repeated >10bp except for a 1bp interruption by a different base’, e.g. AAAATAAAAAA). The second BED file contains all intervals of homopolymer regions of lengths between 4 to 6bp. It is important to note that GRCh38_AllTandemRepeatsandHomopolymers_slop5.bed contains homopolymer regions from the first BED file only, and does not contain homopolymers of lengths 4-6bp from the second BED file.
 
-Meanwhile, non-homopolymer regions are obtained by subtracting the homopolymer regions from GIAB high-confidence intervals for each genome. 
-![image](https://github.com/maiziezhoulab/LabReadMe/assets/5825603/02a8a079-905d-4f47-85cd-3c93540a0be0)
+
