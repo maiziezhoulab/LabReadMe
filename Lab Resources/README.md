@@ -2,10 +2,18 @@
 
 ## Softwares
 ### Illustrator
-maizie.zhou@vanderbilt.edu, Buy250peryear@ <br />
-Only two people can use it at the same time, please notify Maizie to send you a verification code after you logging with the account and password.  <br />
+ACCT: maizie.zhou@vanderbilt.edu
 
+PWD: Buy250peryear@
 
+Only two people can use it at the same time, please notify Maizie to send you a verification code after you logging with the account and password. 
 
+DIY pirate, see [here](https://www.reddit.com/r/GenP/)
 
-https://zenodo.org/: maiziezhoulab@gmail.com;Applestore2016@
+## Websites
+### Zenodo
+https://zenodo.org/
+
+ACCT: maiziezhoulab@gmail.com
+
+PWD: Applestore2016@
