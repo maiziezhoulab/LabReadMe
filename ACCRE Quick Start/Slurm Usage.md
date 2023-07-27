@@ -148,7 +148,7 @@ examples:
 #SBATCH --exclude=node[01-09]
 #SBATCH --exclude=node01,node02,node03,node04,node05,node07,node08,node09,node10
 ```
-**NOTE:** So far I've found that these nodes on ACCRE that have some problems activating conda environments:
+**NOTE:** So far I've found that these nodes on ACCRE have some problems activating conda environments:
 
 cn1541, cn1542, cn1554, cn1558
 
