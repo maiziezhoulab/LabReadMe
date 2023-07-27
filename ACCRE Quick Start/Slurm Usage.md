@@ -197,6 +197,9 @@ sacct --format="JobId,JobName,CPUTime,MaxRSS,Elapsed" -j
 ##### Email Notification ####
 #SBATCH --mail-user=[YOUR_EMAIL_ADDRESS]
 #SBATCH --mail-type=END,FAIL
+
+echo "SLURM_JOBID: " $SLURM_JOBID
+
 ```
 
 ### GPU job
@@ -227,6 +230,9 @@ sacct --format="JobId,JobName,CPUTime,MaxRSS,Elapsed" -j
 ##### Email Notification ####
 #SBATCH --mail-user=[YOUR_EMAIL_ADDRESS]
 #SBATCH --mail-type=END,FAIL
+
+echo "SLURM_JOBID: " $SLURM_JOBID
+
 ```
 
 ## Other Resources
