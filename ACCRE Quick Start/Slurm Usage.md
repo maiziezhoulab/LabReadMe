@@ -240,4 +240,4 @@ echo "SLURM_JOBID: " $SLURM_JOBID
 - [Introducing Slurm by Princeton](https://researchcomputing.princeton.edu/support/knowledge-base/slurm)
 - [CN materials: Slurm作业调度系统使用指南 by 李会民](http://hmli.ustc.edu.cn/doc/userguide/slurm-userguide.pdf)
 ## FAQ
-%% ReqNodeNotAvail, May be reserved for other job
+- **ReqNodeNotAvail, Reserved for maintenance :** The time period you required for this job overlaps with the cluster's schduled maintainance time, try with a shorter time request
