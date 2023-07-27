@@ -155,6 +155,10 @@ cn1541, cn1542, cn1554, cn1558
 Not sure if this issue was fixed or not
 
 ## Track Your Jobs
+
+It is recommended to add `echo "SLURM_JOBID: " $SLURM_JOBID` to your slurm script, so that you can record the job ID in your `.out` file
+
+### bash commands
 squeue -a -u
 
 rtracejob
