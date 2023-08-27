@@ -17,3 +17,6 @@ https://zenodo.org/
 ACCT: maiziezhoulab@gmail.com
 
 PWD: Applestore2016@
+
+#### Upload to Zenodo from command line
+See this [Repo](https://github.com/jhpoelen/zenodo-upload)
