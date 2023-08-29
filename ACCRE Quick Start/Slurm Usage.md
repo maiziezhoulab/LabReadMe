@@ -83,7 +83,7 @@ List of available accounts and partitions
 
 **NOTE:**
 1. For partition maizie1~3, there's no time limit. maizie nodes are our private node and is hidden by default, you need to add `-a` after `squeue` and `scontrol show node` in order too see them
-2. Most of the nodes in turing partition use NVIDIA 2080TI, but some have NVIDIA A6000 available. Nodes in pascal partition have NVIDIA TITAN X. Typically, pascal partition has shorter queue time, but the resources allocated to one task are more limited (less CPUs quota for on task for example). Personally, I recommend you to use pascal for interactive GPU task debug/environment configuration, and use turing for production.
+2. Most of the nodes in turing partition use NVIDIA 2080TI, but some have NVIDIA RTX 6000 available. Nodes in pascal partition have NVIDIA TITAN X. Typically, pascal partition has shorter queue time, but the resources allocated to one task are more limited (less CPUs quota for on task for example). Personally, I recommend you to use pascal for interactive GPU task debug/environment configuration, and use turing for production.
 
 #### Requiring Computing Resources
 ```
