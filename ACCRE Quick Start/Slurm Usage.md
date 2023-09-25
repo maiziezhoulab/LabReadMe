@@ -159,7 +159,7 @@ Not sure if this issue was fixed or not
 
 If you are submitting jobs under `/lio/lfs`, you need to **login to the node you are submitting to**
 
-For example, if you want to submit a job to maizie2 node (account: cgw_maizie2, partition: cgw-maizie2), you need to first ssh to maizie2 node, then submit the job. Otherwise the job will fail in a few seconds without any error message.
+For example, if you want to submit a job to maizie2 node (account: cgw_maizie2, partition: cgw-maizie2), and the slurm script is under `/lio/lfs` (or it's subdir), you need to first ssh to maizie2 node, then submit the job. Otherwise the job will fail in a few seconds without any error message.
 
 ## Track Your Jobs
 
