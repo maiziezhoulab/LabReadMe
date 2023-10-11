@@ -129,7 +129,7 @@ In these two lines, you can tell the slurm how to notifiy you. `--mail-user` is 
 ```
 #SBATCH --gres=gpu:1
 ```
-Add this line to request GPU resources. Note that you have submit to partitions that do have GPU resources.
+Add this line to request GPU resources. Note that you have to submit to partitions that do have GPU resources.
 
 #### Submit to Specific node(s)
 ```
