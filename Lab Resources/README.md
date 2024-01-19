@@ -20,3 +20,7 @@ PWD: Applestore2016@
 
 #### Upload to Zenodo from command line
 See this [Repo](https://github.com/jhpoelen/zenodo-upload)
+
+Note: 
+- The script requires `jq` to run, please use `ml GCCcore/.11.3.0 jq/1.6` before running `zenodo_upload.sh`
+- Token for ACCRE upload can be found in `/data/maiziezhou_lab/Yichen/Softwares/zenodo-upload/TOKEN`, or you can create a new one following the guide in the repo
