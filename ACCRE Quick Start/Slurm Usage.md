@@ -174,7 +174,10 @@ sacct --format="JobID,user,account,elapsed, Timelimit,MaxRSS,ReqMem,MaxVMSize,nc
 
 sacct --format=jobid,jobname,account,ntasks,elapsed,user,state -S 082222 -E 082522  -a | grep "maizie" | grep "FAILED" | grep -v ".ex+\|.ba+"
 
-sacct --format="JobId,JobName,CPUTime,MaxRSS,Elapsed" -j
+sacct --format="JobId,JobName,TotalCPU,MaxRSS,Elapsed" -j
+
+you can also refer to this [link](https://rc.byu.edu/wiki/?id=Using+sacct) for more information, especially the difference between TotalCPU and CPUTime
+
 ## Slurm Templates
 ### Regular job
 ```
