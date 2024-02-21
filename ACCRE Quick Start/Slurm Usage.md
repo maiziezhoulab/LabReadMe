@@ -176,6 +176,8 @@ sacct --format=jobid,jobname,account,ntasks,elapsed,user,state -S 082222 -E 0825
 
 sacct --format="JobId,JobName,TotalCPU,MaxRSS,Elapsed" -j
 
+e.g.: sacct --format="JobId,JobName,TotalCPU,MaxRSS,Elapsed" -j $SLURM_JOBID
+
 you can also refer to this [link](https://rc.byu.edu/wiki/?id=Using+sacct) for more information, especially the difference between TotalCPU and CPUTime
 
 ## Slurm Templates
