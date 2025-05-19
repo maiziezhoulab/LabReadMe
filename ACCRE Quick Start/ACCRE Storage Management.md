@@ -62,6 +62,8 @@ chmod 740 ${report}
 ## Backup Files to Lio
 Please also check this [section](Slurm%20Usage.md#special-notes-for-lio-system). You might need to specify the \[PARTITION_NAME\] as the same node where you are submitting the job. (e.g. If you are on maizie node and want to submit this script, you may need to set \[PARTITION_NAME\] as `cgw_maizie`, and the \[ACCOUNT_NAME\] accordingly)
 
+**Path to lio:** `/lio/lfs/maiziezhou_lab/`
+
 As the LIO system is designed for handling a large total size of data, but not a large number of individual files, it is recommended to archive the directories that contain a large number of small files into a single compressed file (e.g., `tar -czf your_data.tar.gz your_data/`) befor copying.
 
 ***IMPORTANT:*** Please check the md5check.out under the target directory to see if any files failed to pass the MD5 check before deleting the original files!
