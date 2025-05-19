@@ -1,8 +1,7 @@
 # ACCRE Quick Start
 
 ## ACCRE Official Resources
-- [ACCRE overview](https://www.vanderbilt.edu/accre/overview/)
-- [ACCRE documentation](https://www.vanderbilt.edu/accre/documentation/)
+- [ACCRE documentation](https://help.accre.vanderbilt.edu/index.php?title=Overview)
 - [ACCRE cheatsheet](https://www.vanderbilt.edu/accre/documentation/cheatsheet/)
 - [ACCRE FAQ](https://www.vanderbilt.edu/accre/support/faq/)
 - [ACCRE helpdesk](https://www.vanderbilt.edu/accre/support/helpdesk/) (request help when nodes are down etc.) 
