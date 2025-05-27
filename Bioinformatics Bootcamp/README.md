@@ -3,7 +3,7 @@
 
 ### sequencing technology, variants etc
 
-all slides credit to Prof Xin Zhou
+all slides credit to Prof Maizie Zhou
 
 https://drive.google.com/drive/folders/1fyz16hFAAVUbPJsxaxYHXWIrGONgnK9I?usp=sharing
 
