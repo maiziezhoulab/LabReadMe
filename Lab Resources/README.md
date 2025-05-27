@@ -4,7 +4,7 @@
 ### Illustrator
 ACCT: maizie.zhou@vanderbilt.edu
 
-PWD: Buy250peryear@
+PWD: ask Maizie for it
 
 Only two people can use it at the same time, please notify Maizie to send you a verification code after you logging with the account and password. 
 
@@ -16,7 +16,7 @@ https://zenodo.org/
 
 ACCT: maiziezhoulab@gmail.com
 
-PWD: Applestore2016@
+PWD: ask Maizie for it
 
 #### Upload to Zenodo from command line
 See this [Repo](https://github.com/jhpoelen/zenodo-upload)
