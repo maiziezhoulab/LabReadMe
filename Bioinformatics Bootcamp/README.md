@@ -7,7 +7,6 @@ all slides credit to Prof Maizie Zhou
 
 https://drive.google.com/drive/folders/1fyz16hFAAVUbPJsxaxYHXWIrGONgnK9I?usp=sharing
 
-group private slides, don's share with others!
 
 
 ### basic file formats
