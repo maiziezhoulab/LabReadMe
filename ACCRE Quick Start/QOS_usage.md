@@ -141,3 +141,9 @@ Here is an example of SLURM script template of using QOS:
 
 echo "SLURM_JOBID: " $SLURM_JOBID
 ```
+
+## 4. Use salloc to run job on the background
+```
+ssh -t liuy120@login.accre.vu "salloc --nodes=1 --ntasks=1 --cpus-per-task
+ =10 --mem=64G --time=01-00:00:00 --partition=interactive --account=maiziezhou_lab_int --qos=maiziezhou_lab_int"
+```
