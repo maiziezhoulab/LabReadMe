@@ -73,7 +73,6 @@ lines to your slurm script:
 #SBATCH --account=cgg_int
 #SBATCH --partition=interactive
 #SBATCH --qos=debug_int
-
 ```
  
 ## 2. Check QOS Status (if Applicable)
@@ -83,8 +82,24 @@ If you want to use a Quality of Service (QOS) queue, check the current usage and
 qosstate maiziezhou_lab_int
 ```
 
+```
+Live interactive QOS usage report for QOS available to user: yuanw2
+
+QOS                     CPUs (used/limit)   Memory GiB (used/limit)
+===================================================================
+maiziezhou_lab_int                15 / 64            200.0 / 1002.0
+
+
+Breakdown of maiziezhou_lab_int usage by slurm account and user
+
+Account              User           CPUs      Memory GiB
+========================================================
+maiziezhou_lab_int
+                     yuanw2           15           200.0
+```
 Note:
-Make sure your resource requests do not exceed the available quota.
+Make sure your resource requests do not exceed the available quota. 
+Use `qosstate --user [USER]` to check USER's usage. 
 
 ## 3. Prepare and Submit Your Job
 
