@@ -142,7 +142,7 @@ Here is an example of SLURM script template of using QOS:
 echo "SLURM_JOBID: " $SLURM_JOBID
 ```
 
-## 4. Use salloc to run job on the background
+## 4. Use salloc to Run Jobs on the Background
 
 If you would like your jobs to run on the background, here is an command to request resource for QOS: 
 
