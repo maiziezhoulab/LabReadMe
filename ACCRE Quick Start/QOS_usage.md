@@ -109,3 +109,35 @@ Submission works the same as on CentOS 7:
 ```bash
 sbatch your_script.slurm
 ```
+Here is an example of SLURM script template of using QOS:
+```
+#!/bin/bash
+#
+#SBATCH --job-name=[YOUR_JOB_NAME]
+#
+##### Account and Partition ####
+#SBATCH --account=[ACCOUNT_NAME]
+#SBATCH --partition=interactive
+#SBATCH --qos=[PARTITION_NAME]
+#
+##### Resources Required ####
+###Basic
+#SBATCH --ntasks=1
+#SBATCH --nodes=1
+#SBATCH --cpus-per-task=[CPU_NUMBER]
+#SBATCH --mem=[MEMORY]
+#SBATCH --time=[TIME_REQUESTED]
+#
+###Advanced
+##submit to a specific node/some specific nodes, add this command: #SBATCH --nodelist=[NODENAME]
+#
+##### Output and Error Information ####
+#SBATCH --output=[OUTFILE_NAME].out
+#SBATCH --error=[ERRFILE_NAME].err
+#
+##### Email Notification ####
+#SBATCH --mail-user=[YOUR_EMAIL_ADDRESS]
+#SBATCH --mail-type=END,FAIL
+
+echo "SLURM_JOBID: " $SLURM_JOBID
+```
