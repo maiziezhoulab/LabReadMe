@@ -147,6 +147,5 @@ echo "SLURM_JOBID: " $SLURM_JOBID
 If you would like your jobs to run on the background, here is an command to request resource for QOS: 
 
 ```
-ssh -t YOUR_VUNETID0@login.accre.vu "salloc --nodes=1 --ntasks=1 --cpus-per-task
- =10 --mem=64G --time=01-00:00:00 --partition=interactive --account=maiziezhou_lab_int --qos=maiziezhou_lab_int"
+ssh -t YOUR_VUNETID0@login.accre.vu "salloc --nodes=1 --ntasks=1 --cpus-per-task=10 --mem=64G --time=01-00:00:00 --partition=interactive --account=maiziezhou_lab_int --qos=maiziezhou_lab_int"
 ```
