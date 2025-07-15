@@ -5,7 +5,7 @@
 Not so important tho
 
 ## Server IP: 10.8.129.58, use SSH to connect to the server (or anything you like)
-exp: [ssh username@10.8.129.58], type in [PASSWD]
+exp: [ssh username@10.8.129.82], type in [PASSWD]
 
 extra notice: you need to use the Vandy VPN if you are not remote from campus, refer to this: https://it.vanderbilt.edu/services/catalog/end-point_computing/network_access/remote-access/index.php
 
