@@ -64,7 +64,7 @@ Please also check this [section](Slurm%20Usage.md#special-notes-for-lio-system).
 
 **Path to lio:** `/lio/lfs/maiziezhou_lab/maiziezhou_lab/`
 
-**Path to lio（updated 07/17/2025 login via hostname: login.accre.vu）:** `/lfs/archer.accre.vu/maiziezhou_lab/maiziezhou_lab/‘
+**Path to lio（updated 07/17/2025 login via hostname: login.accre.vu）:** `/lfs/archer.accre.vu/maiziezhou_lab/maiziezhou_lab/`
 
 As the LIO system is designed for handling a large total size of data, but not a large number of individual files, it is recommended to archive the directories that contain a large number of small files into a single compressed file (e.g., `tar -czf your_data.tar.gz your_data/`) befor copying.
 
