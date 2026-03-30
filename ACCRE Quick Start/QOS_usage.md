@@ -97,6 +97,19 @@ Account              User           CPUs      Memory GiB
 maiziezhou_lab_int
                      yuanw2           15           200.0
 ```
+
+```bash
+qosstate maiziezhou_lab_phd_int
+```
+
+```
+Live interactive QOS usage report for QOS available to user: yuanw2
+
+Interactive QOS             CPUs (used/limit)   Memory GiB (used/limit)
+=======================================================================
+maiziezhou_lab_phd_int                0 / 128              0.0 / 1994.0
+
+```
 Note:
 Make sure your resource requests do not exceed the available quota. 
 Use `qosstate --user [USER]` to check USER's usage. 
