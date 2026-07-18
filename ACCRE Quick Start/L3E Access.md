@@ -12,7 +12,7 @@ folder or any other group directory.
 - **Off campus?** Connect to the **Vanderbilt VPN first.** You cannot reach
   `l3.accre.vu` without it.
 - You must have completed the **L3E Acceptable Use Policy** in KnowBe4 and been added
-  to the restricted group. If you were just added, wait ~30 minutes.
+  to the restricted group. 
 
 ---
 
